@@ -1,3 +1,6 @@
+//background: <section data-background="#dddddd">; <section data-background-gradient= "linear-gradient(to bottom, #ddd, #191919)">; <section data-background="image.png">; <section data-background="image.png" data-background-repeat="repeat" data-background-size="100px">; <section data-background-video="video.mp4,video.webm">;
+//transition: <section data-background-transition="zoom">
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,20 +11,52 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/black.css"> //black/white/league/sky/beige/simple/serif/blood/night/moon/solarized
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
+		<style>
+			#ogloszenie {
+				min-width: 85%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: auto;
+				margin-bottom: auto;
+			}
+		</style>
+		
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<iframe width="560" height="315" src="https://www.youtube.com/watch?v=RayToE35mDM" frameborder="0" allowfullscreen></iframe>
+					//<iframe width="560" height="315" src="https://www.youtube.com/watch?v=RayToE35mDM" frameborder="0" allowfullscreen></iframe>
+				</section>
+				
+				<section data-background-video="ogloszenie.mp4">
+					Slide 2
 				</section>
 				
 				<section>
-					Slide 2
+					<iframe data-autoplay width="900" height="720" src="ogloszenie.mp4"></iframe>
+					Slide 3
+				</section>
+				
+				<section>
+					<iframe data-autoplay width="1800" height="1440" src="ogloszenie.mp4"></iframe>
+					Slide 4
+				</section>
+				
+				<section>
+					<video src="ogloszenie.mp4" data-autoplay controls></video>
+					Slide 5
+				</section>
+				
+				<section>
+					<video data-autoplay controls id="ogloszenie">
+						<source src="ogloszenie.mp4" type="video/mp4">
+					</video>
 				</section>
 			</div>
 		</div>
